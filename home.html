@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <span>Welcome, <span id="userName">User</span>!</span>
+        <button id="editInfo">Edit Info</button>
+        <button id="cart">Cart</button>
+        <button id="logout">Logout</button>
+    </div>
+    <div class="container">
+        <div id="fruitList"></div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="cartCloseBtn">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartDetails"></div>
+            <p>Total Price: $<span id="totalPrice">0.00</span></p>
+            <button id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="home.js"></script>
+</body>
+</html>
